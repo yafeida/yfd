@@ -12,6 +12,7 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 @EnableAsync
 public class FebsApplication {
     public static void main(String[] args) {
+    	
         new SpringApplicationBuilder(FebsApplication.class)
                 .run(args);
     }
