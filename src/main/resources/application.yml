@@ -19,7 +19,7 @@ spring:
         # 数据源-1，名称为 primary
         primary:
           username: root
-          password: root
+          password: 123
           driver-class-name: com.mysql.cj.jdbc.Driver
           url: jdbc:mysql://127.0.0.1:3306/wx?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
         # 数据源-2，名称为 test
@@ -81,3 +81,16 @@ febs:
     anonUrl: /login,/logout/**,/regist,/user/check/**
     # token有效期，单位秒
     jwtTimeOut: 3600
+    
+logging:
+  level:
+    org.springframework.web: INFO
+    com.github.binarywang.demo.wx.mp: DEBUG
+    me.chanjar.weixin: DEBUG
+wx:
+  mp:
+    configs:
+      - appId: wx5ae4b9e95f26884f
+        secret: 57e427685d119f5aa6c1414930041c46
+        token: test
+        aesKey: 6XfYIu67UGmWRblvZ6hac4tvTI8PjDs2N9xYH7QhRWu
